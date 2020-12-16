@@ -7,7 +7,7 @@ router.get('/', businessInformation.home)
 
 router.get('/news', businessInformation.news)
 
-router.get('/pricing', businessInformation.pricing)
+router.get('/services', businessInformation.services)
 
 router.get('/aboutUs', businessInformation.aboutUs)
 

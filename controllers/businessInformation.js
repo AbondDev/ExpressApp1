@@ -7,8 +7,8 @@ module.exports.news = (req,res) => {
   res.render('news')
 }
 
-module.exports.pricing = (req,res) => {
-  res.render('pricing')
+module.exports.services = (req,res) => {
+  res.render('services')
 }
 
 module.exports.aboutUs = (req,res) => {
