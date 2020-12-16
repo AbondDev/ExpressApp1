@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Boostrap js -->
-  <script src="/js/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
   <title>Business Name</title>
 </head>
 
-<body class="d-flex flex-column vh-100">
+<body class="d-flex flex-column vh-100 ">
   <%-include('../partials/navigation')%>
-  <main class="container-fluid mt-5">
+  <main class="container-fluid mt-5 px-0 mx-0">
     <%- body %>
   </main>
   <%-include('../partials/footer')%>
 </body>
+<!-- Boostrap js -->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/formValidation.js"></script>
 </html>

@@ -1,16 +1,25 @@
 
-module.exports.home = (req,res) => {
+module.exports.renderHome = (req,res) => {
   res.render('home')
 }
 
-module.exports.news = (req,res) => {
+module.exports.renderNews = (req,res) => {
   res.render('news')
 }
 
-module.exports.services = (req,res) => {
+module.exports.renderServices = (req,res) => {
   res.render('services')
 }
 
-module.exports.aboutUs = (req,res) => {
+module.exports.renderAboutUs = (req,res) => {
   res.render('aboutUs')
+}
+
+module.exports.renderContactUsForm = (req, res) => {
+  res.render('contactUs')
+}
+
+module.exports.sendContact = (req,res) => {
+  console.log(req.body)
+  res.redirect('/')
 }

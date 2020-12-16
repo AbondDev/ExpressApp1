@@ -1,0 +1,63 @@
+<% layout('layouts/boilerplate')%>
+<!-- Title info  -->
+<section class="container mb-5">
+  <div class="container mb-5">
+    <h1 class="h1 w-100 d-flex justify-content-center">Contact Us</h1>
+    <p class="col-8 offset-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur magni inventore tempora in fugit numquam, animi deserunt nemo assumenda. Aliquam!</p>
+  </div>
+  <div class="row">
+    <div class="d-none d-md-flex col-6">
+      <img class="img-fluid pb-3" src="https://images.unsplash.com/photo-1572274407649-6cb883740677?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Someone Typing">
+    </div>
+    <!-- contact form -->
+    <div class="col-6">
+      <form class="needs-validation" action="/" method="post" enctype="multipart/form-data" novalidate>
+        <h3 class="h3 text-center"> Send Us a Message</h3>
+        <div class="form-row justify-content-center mb-3">
+          <div class="col-md-10">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="contact[name]" placeholder="Enter your name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row justify-content-center mb-3">
+          <div class="col-md-10">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="contact[email]" placeholder="Enter your email" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row justify-content-center mb-3">
+          <div class="col-md-10">
+            <label for="phone">Phone:</label>
+            <input type="tel" class="form-control" name="contact[phone]" placeholder="Enter your phone">
+          </div>
+        </div>
+        <div class="form-row justify-content-center mb-3">
+          <div class="col-md-10">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" name="contact[date]">
+          </div>
+        </div>
+        <div class="form-row justify-content-center mb-2">
+          <div class="col-md-10">
+            <label for="notes">Additional Info:</label>
+            <textarea name="contact[notes]" class="form-control" rows="10" cols="50" required></textarea>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6"><button type="submit" class="btn btn-primary btn-block">Submit</button></div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</section>

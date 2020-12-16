@@ -2,7 +2,7 @@ const express = require('express');
 const ejsMate = require('ejs-mate');
 const path = require('path');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const businessInformationRoutes = require('./routes/businessInformation');
 
