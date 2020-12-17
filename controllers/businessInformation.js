@@ -1,4 +1,4 @@
-
+const Email = require('../nodemailer')
 module.exports.renderHome = (req,res) => {
   res.render('home')
 }
@@ -19,7 +19,10 @@ module.exports.renderContactUsForm = (req, res) => {
   res.render('contactUs')
 }
 
-module.exports.sendContact = (req,res) => {
+module.exports.sendContact = async (req,res) => {
   console.log(req.body)
-  res.redirect('/')
+  const email = new Email(req.body.contact)
+  await email.generateTestEmailAccountWithTransporter()
+  await email.sendTestEmail()
+  return res.redirect('/')
 }
